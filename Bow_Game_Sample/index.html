@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <title>Ronen Tsamir Bowman Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body { background-color: #000000 }
+        #theStage { border: 1px solid #000000;
+            background-image:url('assets/Background/background.jpg');
+            background-repeat:repeat;
+            background-attachment:scroll;
+            background-position:100%;
+            }
+    </style>
+    <script type="text/javascript" src="DisplayObject/Shape.js"></script>
+    <script type="text/javascript" src="DisplayObject/Sprite.js"></script>
+    <script type="text/javascript" src="DisplayObject/ImageLoader.js"></script>
+    <script type="text/javascript" src="BowMan.js"></script>
+    <script type="text/javascript" src="Arrow.js"></script>
+    <script type="text/javascript" src="CGameManager.js"></script>
+    <script type="text/javascript" src="InitGame.js"></script>
+</head>
+<body>
+<button type="button" id="rePlay" name="rePlay" onclick="init()"> Play Again </button>
+<br>
+
+<script type="text/javascript">
+    CreateStage(700,500);
+    init();
+</script>
+</body>
+</html>
