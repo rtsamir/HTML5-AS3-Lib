@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ronen Tsamir: JavaScript AS3 Sample 3 </title>
+    <script type="text/javascript" src="DisplayObject/Shape.js"></script>
+    <script type="text/javascript" src="DisplayObject/Sprite.js"></script>
+    <script type="text/javascript" src="DisplayObject/ImageLoader.js"></script>
+    <script type="text/javascript" src="InitStage.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+    CreateStage(700,500,45);
+    var image1 = new DisplayObject.ImageLoader("assets/Sprites/beholder.png");
+    stage.addChild(image1);
+    image1.x = 50;
+    image1.y = 50
+    var image2 = image1.clone();
+    image2.currentframe = 3;
+    image2.setFps(45)
+    stage.addChild(image2);
+    image2.x = 150;
+
+    var explo = new DisplayObject.ImageLoader("assets/Sprites/explosion.png");
+    explo.cols = 4;
+    explo.totalframes =8;
+    explo.width = 71;
+    explo.height = 100;
+    stage.addChild(explo)
+
+</script>
+</body>
+</html>
+
+
+הי דביר,
+
+מה קורה?
+
+העלתי סידרה של שיעורים בבלוג בנושא של HTML5, אשמח לקבל חוות דעת.
+
+קישור לשיעורים: http://ronen.tsamir.net/?page_id=1143
+
+תודה.
+
+

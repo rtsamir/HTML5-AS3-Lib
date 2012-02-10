@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ronen Tsamir: JavaScript AS3 Sample 1 </title>
+    <script type="text/javascript" src="DisplayObject/Shape.js"></script>
+    <script type="text/javascript" src="DisplayObject/Sprite.js"></script>
+    <script type="text/javascript" src="DisplayObject/ImageLoader.js"></script>
+    <script type="text/javascript" src="InitStage.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    CreateStage(700,500,45);
+
+    var shape1 = new DisplayObject.Shape();
+    shape1.x = 100;
+    shape1.y = 200;
+    stage.addChild(shape1);
+    shape1.drawShape = function()
+    {
+        graphics.lineWidth=7;
+        graphics.lineJoin= "round";
+        graphics.beginPath();
+        graphics.rect(-10,-100,20,200)
+        graphics.stroke();
+        graphics.closePath();
+    }
+   function onEnterFrame()
+   {
+       shape1.x+=1;
+       if(shape1.x > mCanvas.width)
+           shape1.x = 1;
+       shape1.rotation+=0.005;
+   }
+</script>
+</body>
+</html>
